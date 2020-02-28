@@ -25,4 +25,9 @@ class CategoryCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func updatecategoryCell(categ : CategoryData){
+        categLbl.text = categ.categName
+        categBackground.image = UIImage(named: categ.categImage)
+    }
+    
 }

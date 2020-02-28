@@ -22,21 +22,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jd9-vj-9vL">
-                                <rect key="frame" x="0.0" y="58.5" width="414" height="729.5"/>
+                                <rect key="frame" x="0.0" y="58.5" width="414" height="749.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="qWH-J9-66H" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="150" id="qWH-J9-66H" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qWH-J9-66H" id="sW5-ob-qRI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="5ii-w6-AtX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIK-vJ-qmG">
-                                                    <rect key="frame" x="145.5" y="41.5" width="123" height="37"/>
+                                                    <rect key="frame" x="145.5" y="56.5" width="123" height="37"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gIK-vJ-qmG" firstAttribute="centerY" secondItem="sW5-ob-qRI" secondAttribute="centerY" id="fwD-xP-as6"/>
-                                                <constraint firstAttribute="bottom" secondItem="5ii-w6-AtX" secondAttribute="bottom" id="oH1-Ux-b6G"/>
+                                                <constraint firstAttribute="bottom" secondItem="5ii-w6-AtX" secondAttribute="bottom" constant="5" id="oH1-Ux-b6G"/>
                                                 <constraint firstItem="gIK-vJ-qmG" firstAttribute="centerX" secondItem="sW5-ob-qRI" secondAttribute="centerX" id="oaL-7b-SOV"/>
                                                 <constraint firstItem="5ii-w6-AtX" firstAttribute="leading" secondItem="sW5-ob-qRI" secondAttribute="leading" id="rTH-QA-xIo"/>
                                                 <constraint firstItem="5ii-w6-AtX" firstAttribute="top" secondItem="sW5-ob-qRI" secondAttribute="top" id="snm-WF-c8n"/>
@@ -63,7 +63,7 @@
                         <constraints>
                             <constraint firstItem="Jd9-vj-9vL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cdf-Ct-MUR"/>
                             <constraint firstItem="Fus-tE-xHS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gg8-N7-dlR"/>
-                            <constraint firstAttribute="bottom" secondItem="Jd9-vj-9vL" secondAttribute="bottom" constant="20" symbolic="YES" id="NLg-As-u0X"/>
+                            <constraint firstAttribute="bottom" secondItem="Jd9-vj-9vL" secondAttribute="bottom" id="NLg-As-u0X"/>
                             <constraint firstItem="Jd9-vj-9vL" firstAttribute="top" secondItem="Fus-tE-xHS" secondAttribute="bottom" constant="15" id="OVx-hr-zRB"/>
                             <constraint firstItem="Jd9-vj-9vL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VE8-7n-IBl"/>
                             <constraint firstItem="Fus-tE-xHS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xEe-4C-iVa"/>
