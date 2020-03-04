@@ -34,6 +34,23 @@ class CategoriesVc: UIViewController , UITableViewDataSource , UITableViewDelega
         
        }
        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataServices.instance.getCategData()[indexPath.row]
+        performSegue(withIdentifier: "goToProducts", sender: category)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destionVc = segue.destination as? ProductVc {
+            ClearNavbarTitle()
+            assert(sender as? Category == nil)
+            destionVc.initProducts(category: sender as! CategoryData)
+            
+        }
+    }
+    func ClearNavbarTitle(){
+        let barBtn = UIBarButtonItem()
+        barBtn.title = ""
+        navigationItem.backBarButtonItem = barBtn
+    }
 
 
 
